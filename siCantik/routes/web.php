@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('template', function () { //sesuai a href
+    return view('layouts.master');	//sesuai nama file di view layouts = nama folder, master = nama file, dipisahkan dengan tanda titik
+});
