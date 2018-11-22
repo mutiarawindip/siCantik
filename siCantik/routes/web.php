@@ -14,9 +14,20 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
 Route::get('about', function () { //sesuai a href
-    return view('layouts.master');	//sesuai nama file di view layouts = nama folder, master = nama file, dipisahkan dengan tanda titik
+    return view('about');	//sesuai nama file di view layouts = nama folder, master = nama file, dipisahkan dengan tanda titik
 });
 Route::get('products', function () { //sesuai a href
-    return view('layouts.products');	//sesuai nama file di view layouts = nama folder, master = nama file, dipisahkan dengan tanda titik
+    return view('products');	//sesuai nama file di view layouts = nama folder, master = nama file, dipisahkan dengan tanda titik
 });
+Route::get('articles', function () { //sesuai a href
+    return view('articles');	//sesuai nama file di view layouts = nama folder, master = nama file, dipisahkan dengan tanda titik
+});
+Route::get('contact', function () { //sesuai a href
+    return view('contact');	//sesuai nama file di view layouts = nama folder, master = nama file, dipisahkan dengan tanda titik
+});
+Route::get('articlesDetail', function () { //sesuai a href
+    return view('articlesDetail');	//sesuai nama file di view layouts = nama folder, master = nama file, dipisahkan dengan tanda titik
+});
+

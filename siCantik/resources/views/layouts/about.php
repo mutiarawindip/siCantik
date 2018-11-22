@@ -58,8 +58,8 @@
 	          <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
             <li class="nav-item active"><a href="/about" class="nav-link">About</a></li>
             <li class="nav-item"><a href="/products" class="nav-link">Product</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Articles</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Contact Us</a></li>
+            <li class="nav-item"><a href="/articles" class="nav-link">Articles</a></li>
+            <li class="nav-item"><a href="/contact" class="nav-link">Contact Us</a></li>
 	        </ul>
 	      </div>
 	    </div>
