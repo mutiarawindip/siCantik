@@ -4,6 +4,11 @@
 @yield('articlesDetail')
 @yield('contact')
 @yield('products')
+@yield('products.dry')
+@yield('products.normal')
+@yield('products.oily')
+@yield('products.sensitive')
+@yield('products.t-comb')
 @yield('about')
 @yield('home')
 

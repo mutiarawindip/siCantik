@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    
+    <link rel="shortcut icon" href="pretty-gh-pages/images/cantik_pink.png" type="image/ico" />
+
     <title>SiCantik</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -34,13 +37,13 @@
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
           <div class="col-md-8 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
           	<div class="icon">
-          		<a href="index.html" class="logo">
+          		<a href="/" class="logo">
           			<span class="flaticon-flower"></span>
           			<h1>SiCantik</h1>
           		</a>
           	</div>
             <h1 class="mb-3 mt-5 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">About</h1>
-            <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="index.html">Home</a></span> <span>About</span></p>
+            <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="/">Home</a></span> <span>About</span></p>
           </div>
         </div>
       </div>
@@ -48,18 +51,17 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">SiCantik</a>
+	      <a class="navbar-brand" href="/">SiCantik</a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
-
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
-            <li class="nav-item active"><a href="/about" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="/products" class="nav-link">Product</a></li>
-            <li class="nav-item"><a href="/articles" class="nav-link">Articles</a></li>
-            <li class="nav-item"><a href="/contact" class="nav-link">Contact Us</a></li>
+	          <li class="{{ Request::url() == url('/') ? 'active' : '' }}"><a href="/" class="nav-link">Home</a></li>
+            <li class="{{ Request::url() == url('/about') ? 'active' : '' }}"><a href="/about" class="nav-link">About</a></li>
+            <li class="{{ Request::url() == url('/products') ? 'active' : '' }}"><a href="/products" class="nav-link">Product</a></li>
+            <li class="{{ Request::url() == url('/articles') ? 'active' : '' }}"><a href="/articles" class="nav-link">Articles</a></li>
+            <li class="{{ Request::url() == url('/contact') ? 'active' : '' }}"><a href="/contact" class="nav-link">Contact Us</a></li>
 	        </ul>
 	      </div>
 	    </div>
