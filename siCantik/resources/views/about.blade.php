@@ -9,8 +9,7 @@
     			</div>
     			<div class="col-md-6 pl-md-5 ftco-animate">
     				<h2 class="mb-4">Welcome to SiCantik Local Skin Care Products</h2>
-    				<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
-    				<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
+    				<p>SiCantik is the beauty skin care expert, an insiders' guide to a woman's total image, with a print audience of 6.2 million and an average monthly online audience of 4.3 million. SiCantik mission is to investigate and celebrate beauty skin care with objectivity and candor and to examine appearance in a larger cultural context. Through its journalistic approach and high aesthetic standards, SiCantik delivers content with credentials, which yields unwavering consumer trust.</p>
     			</div>
     		</div>
     	</div>
@@ -21,7 +20,7 @@
       	<div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section ftco-animate text-center">
             <h2 class="mb-4">Our Beauty Experts</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <p>Far far away, local skin care became cool in Indonesia.</p>
           </div>
         </div>
         <div class="row">
@@ -30,9 +29,9 @@
       				<div class="img mb-4" style="background-image: url(pretty-gh-pages/images/person_1.jpg);"></div>
       				<div class="info text-center">
       					<h3><a href="teacher-single.html">Mellisa Smith</a></h3>
-      					<span class="position">Stylist</span>
+      					<span class="position">Student</span>
       					<div class="text">
-	        				<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+	        				<p>Keren Banget! Sangat bermanfaat!</p>
 	        			</div>
       				</div>
         		</div>
@@ -42,9 +41,9 @@
       				<div class="img mb-4" style="background-image: url(pretty-gh-pages/images/person_2.jpg);"></div>
       				<div class="info text-center">
       					<h3><a href="teacher-single.html">Marie Mush</a></h3>
-      					<span class="position">Fashionist</span>
+      					<span class="position">Skin Care Observer</span>
       					<div class="text">
-	        				<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+	        				<p>Tambah paham mengenai local skin care, thx a lot!</p>
 	        			</div>
       				</div>
         		</div>
@@ -54,9 +53,9 @@
       				<div class="img mb-4" style="background-image: url(pretty-gh-pages/images/person_3.jpg);"></div>
       				<div class="info text-center">
       					<h3><a href="teacher-single.html">Ana Jacobson</a></h3>
-      					<span class="position">Makeup Stylist</span>
+      					<span class="position">Business Woman</span>
       					<div class="text">
-	        				<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+	        				<p>Local skin care became cool in Indonesia</p>
 	        			</div>
       				</div>
         		</div>
@@ -66,9 +65,9 @@
       				<div class="img mb-4" style="background-image: url(pretty-gh-pages/images/person_4.jpg);"></div>
       				<div class="info text-center">
       					<h3><a href="teacher-single.html">Ivan Dorchsner</a></h3>
-      					<span class="position">Nail Specialist</span>
+      					<span class="position">Skin Care Specialist</span>
       					<div class="text">
-	        				<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+	        				<p>Mendukung kemajuan skin care Indonesia!</p>
 	        			</div>
       				</div>
         		</div>
