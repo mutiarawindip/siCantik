@@ -1,33 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>SiCantik</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
+@extends('layouts.main')
 
-    <link rel="stylesheet" href="{{asset('pretty-gh-pages/css/open-iconic-bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{asset('pretty-gh-pages/css/animate.css') }}">
-    
-    <link rel="stylesheet" href="{{asset('pretty-gh-pages/css/owl.carousel.min.css') }}">
-    <link rel="stylesheet" href="{{asset('pretty-gh-pages/css/owl.theme.default.min.css') }}">
-    <link rel="stylesheet" href="{{asset('pretty-gh-pages/css/magnific-popup.css') }}">
+@section('products')
 
-    <link rel="stylesheet" href="{{asset('pretty-gh-pages/css/aos.css') }}">
-
-    <link rel="stylesheet" href="{{asset('pretty-gh-pages/css/ionicons.min.css') }}">
-
-    <link rel="stylesheet" href="{{asset('pretty-gh-pages/css/bootstrap-datepicker.css') }}">
-    <link rel="stylesheet" href="{{asset('pretty-gh-pages/css/jquery.timepicker.css') }}">
-
-    
-    <link rel="stylesheet" href="{{asset('pretty-gh-pages/css/flaticon.css') }}">
-    <link rel="stylesheet" href="{{asset('pretty-gh-pages/css/icomoon.css') }}">
-    <link rel="stylesheet" href="{{asset('pretty-gh-pages/css/style.css') }}">
-  </head>
-  <body>
-    
     <div class="hero-wrap js-fullheight" style="background-image: url('pretty-gh-pages/images/bg_1.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
@@ -46,7 +20,7 @@
       </div>
     </div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+   <!--  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
 	      <a class="navbar-brand" href="/">SiCantik</a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,7 +37,7 @@
 	        </ul>
 	      </div>
 	    </div>
-	  </nav>
+	  </nav> -->
     <!-- END nav -->
 		
 		<section class="ftco-section">
@@ -73,129 +47,129 @@
             <h2 class="mb-4">Our Work</h2>
             <p class="work-category">
             	<span class="px-2"><a href="#" class="active">All</a></span> 
-            	<span class="px-2"><a href="#">Make Up</a></span> 
-            	<span class="px-2"><a href="#">Massage</a></span> 
-            	<span class="px-2"><a href="#">Facial</a></span>
-            	<span class="px-2"><a href="#">Spa</a></span>
-            	<span class="px-2"><a href="#">Hair</a></span>
-            	<span class="px-2"><a href="#">Nail</a></span>
+            	<span class="px-2"><a href="#">Dry</a></span> 
+            	<span class="px-2"><a href="#">Normal</a></span> 
+            	<span class="px-2"><a href="#">Oily</a></span>
+            	<span class="px-2"><a href="#">Sensitive</a></span>
+            	<span class="px-2"><a href="#">T-Combination</a></span>
+            	<!-- <span class="px-2"><a href="#">Serum</a></span> -->
             </p>
           </div>
         </div>
         <div class="row">
         	<div class="col-md-4 ftco-animate">
         		<a href="#" class="work-entry">
-        			<img src="pretty-gh-pages/images/work-1.jpg" class="img-fluid" alt="Colorlib Template">
+        			<img src="pretty-gh-pages/images/normal/wardah-2.jpg" class="img-fluid" alt="Facial Wash">
         			<div class="info d-flex align-items-center">
         				<div>
         					<div class="icon mb-4 d-flex align-items-center justify-content-center">
         						<span class="icon-search"></span>
         					</div>
-		        			<h3>Lips Makeover</h3>
+		        			<h3>Facial Wash</h3>
 	        			</div>
         			</div>
         		</a>
         	</div>
         	<div class="col-md-4 ftco-animate">
         		<a href="#" class="work-entry">
-        			<img src="pretty-gh-pages/images/work-2.jpg" class="img-fluid" alt="Colorlib Template">
+        			<img src="pretty-gh-pages/images/normal/emina-5.jpg" class="img-fluid" alt="Cleanser">
         			<div class="info d-flex align-items-center">
         				<div>
         					<div class="icon mb-4 d-flex align-items-center justify-content-center">
         						<span class="icon-search"></span>
         					</div>
-		        			<h3>Hair Style</h3>
+		        			<h3>Cleanser</h3>
 	        			</div>
         			</div>
         		</a>
         	</div>
         	<div class="col-md-4 ftco-animate">
         		<a href="#" class="work-entry">
-        			<img src="pretty-gh-pages/images/work-3.jpg" class="img-fluid" alt="Colorlib Template">
+        			<img src="pretty-gh-pages/images/normal/emina-2.jpg" class="img-fluid" alt="Toner">
         			<div class="info d-flex align-items-center">
         				<div>
         					<div class="icon mb-4 d-flex align-items-center justify-content-center">
         						<span class="icon-search"></span>
         					</div>
-		        			<h3>Makeup</h3>
+		        			<h3>Toner</h3>
 	        			</div>
         			</div>
         		</a>
         	</div>
         	<div class="col-md-4 ftco-animate">
         		<a href="#" class="work-entry">
-        			<img src="pretty-gh-pages/images/work-4.jpg" class="img-fluid" alt="Colorlib Template">
+        			<img src="pretty-gh-pages/images/work-4.jpg" class="img-fluid" alt="">
         			<div class="info d-flex align-items-center">
         				<div>
         					<div class="icon mb-4 d-flex align-items-center justify-content-center">
         						<span class="icon-search"></span>
         					</div>
-		        			<h3>Lips Makeover</h3>
+		        			<h3>Serum</h3>
 	        			</div>
         			</div>
         		</a>
         	</div>
         	<div class="col-md-4 ftco-animate">
         		<a href="#" class="work-entry">
-        			<img src="pretty-gh-pages/images/work-5.jpg" class="img-fluid" alt="Colorlib Template">
+        			<img src="pretty-gh-pages/images/work-5.jpg" class="img-fluid" alt="">
         			<div class="info d-flex align-items-center">
         				<div>
         					<div class="icon mb-4 d-flex align-items-center justify-content-center">
         						<span class="icon-search"></span>
         					</div>
-		        			<h3>Hair Style</h3>
+		        			<h3>Sunscreen</h3>
 	        			</div>
         			</div>
         		</a>
         	</div>
         	<div class="col-md-4 ftco-animate">
         		<a href="#" class="work-entry">
-        			<img src="pretty-gh-pages/images/work-6.jpg" class="img-fluid" alt="Colorlib Template">
+        			<img src="pretty-gh-pages/images/work-6.jpg" class="img-fluid" alt="">
         			<div class="info d-flex align-items-center">
         				<div>
         					<div class="icon mb-4 d-flex align-items-center justify-content-center">
         						<span class="icon-search"></span>
         					</div>
-		        			<h3>Makeup</h3>
+		        			<h3>Lip Scrub</h3>
 	        			</div>
         			</div>
         		</a>
         	</div>
         	<div class="col-md-4 ftco-animate">
         		<a href="#" class="work-entry">
-        			<img src="pretty-gh-pages/images/work-7.jpg" class="img-fluid" alt="Colorlib Template">
+        			<img src="pretty-gh-pages/images/work-7.jpg" class="img-fluid" alt="">
         			<div class="info d-flex align-items-center">
         				<div>
         					<div class="icon mb-4 d-flex align-items-center justify-content-center">
         						<span class="icon-search"></span>
         					</div>
-		        			<h3>Lips Makeover</h3>
+		        			<h3>Lip Balm</h3>
 	        			</div>
         			</div>
         		</a>
         	</div>
         	<div class="col-md-4 ftco-animate">
         		<a href="#" class="work-entry">
-        			<img src="pretty-gh-pages/images/work-8.jpg" class="img-fluid" alt="Colorlib Template">
+        			<img src="pretty-gh-pages/images/dry/emina-3.jpg" class="img-fluid" alt="">
         			<div class="info d-flex align-items-center">
         				<div>
         					<div class="icon mb-4 d-flex align-items-center justify-content-center">
         						<span class="icon-search"></span>
         					</div>
-		        			<h3>Hair Style</h3>
+		        			<h3>Mask</h3>
 	        			</div>
         			</div>
         		</a>
         	</div>
         	<div class="col-md-4 ftco-animate">
         		<a href="#" class="work-entry">
-        			<img src="pretty-gh-pages/images/work-9.jpg" class="img-fluid" alt="Colorlib Template">
+        			<img src="pretty-gh-pages/images/work-9.jpg" class="img-fluid" alt="">
         			<div class="info d-flex align-items-center">
         				<div>
         					<div class="icon mb-4 d-flex align-items-center justify-content-center">
         						<span class="icon-search"></span>
         					</div>
-		        			<h3>Makeup</h3>
+		        			<h3>Moisturizer</h3>
 	        			</div>
         			</div>
         		</a>
@@ -219,95 +193,5 @@
     	</div>
     </section>
 
-<footer class="ftco-footer ftco-section img">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row mb-5">
-          <div class="col-md-4">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">About Us</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="ftco-footer-widget mb-4">
-            <h2 class="ftco-heading-2">Recent Blog</h2>
-            <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" style="background-image: url(pretty-gh-pages/images/image_1.jpg);"></a>
-                <div class="text">
-                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
-                    <div class="meta">
-                        <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>
-                        <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                        <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-                    </div>
-                </div>
-            </div>
-        <div class="block-21 mb-4 d-flex">
-            <a class="blog-img mr-4" style="background-image: url(pretty-gh-pages/images/image_2.jpg);"></a>
-            <div class="text">
-              <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
-                <div class="meta">
-                <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>
-                <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="col-md-4">
-            <div class="ftco-footer-widget mb-4">
-                <h2 class="ftco-heading-2">Have a Questions?</h2>
-                <div class="block-23 mb-3">
-                  <ul>
-                    <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-                    <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-                    <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="row">
-  <div class="col-md-12 text-center">
 
-    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-  </div>
-</div>
-</div>
-</footer>
-    
-  
-
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-  <script src="{{asset('pretty-gh-pages/js/jquery.min.js') }}"></script>
-  <script src="{{asset('pretty-gh-pages/js/jquery-migrate-3.0.1.min.js') }}"></script>
-  <script src="{{asset('pretty-gh-pages/js/popper.min.js') }}"></script>
-  <script src="{{asset('pretty-gh-pages/js/bootstrap.min.js') }}"></script>
-  <script src="{{asset('pretty-gh-pages/js/jquery.easing.1.3.js') }}"></script>
-  <script src="{{asset('pretty-gh-pages/js/jquery.waypoints.min.js') }}"></script>
-  <script src="{{asset('pretty-gh-pages/js/jquery.stellar.min.js') }}"></script>
-  <script src="{{asset('pretty-gh-pages/js/owl.carousel.min.js') }}"></script>
-  <script src="{{asset('pretty-gh-pages/js/jquery.magnific-popup.min.js') }}"></script>
-  <script src="{{asset('pretty-gh-pages/js/aos.js') }}"></script>
-  <script src="{{asset('pretty-gh-pages/js/jquery.animateNumber.min.js') }}"></script>
-  <script src="{{asset('pretty-gh-pages/js/bootstrap-datepicker.js') }}"></script>
-  <script src="{{asset('pretty-gh-pages/js/jquery.timepicker.min.js') }}"></script>
-  <script src="{{asset('pretty-gh-pages/js/scrollax.min.js') }}"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="{{asset('pretty-gh-pages/js/google-map.js') }}"></script>
-  <script src="{{asset('pretty-gh-pages/js/main.js') }}"></script>
-    
-  </body>
-</html>
+  @endsection
