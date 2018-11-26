@@ -9,10 +9,10 @@ class AdminController extends Controller
 *
 * @return void
 */
-public function __construct()
-{
-	$this->middleware('guest:admin', ['except'=> ['logout']]);
-}
+ 	public function __construct()
+    {
+        $this->middleware('auth:admin');
+    }
 	/**
 	* Show the application dashboard.
 	*
@@ -24,9 +24,9 @@ public function __construct()
 		return view('admin.dashboard');
 	}
 
-	public function logout()
-	{
-		Auth::guard('admin')->logout();
-		return redirect('/');
-	}
+	// public function logout()
+	// {
+	// 	Auth::guard('admin')->logout();
+	// 	return redirect('/');
+	// }
 }

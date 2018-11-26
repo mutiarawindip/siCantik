@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | Documentation</title>
+  <title>SiCantik | Dashboard</title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="{{asset('AdminLTE-2.4.3/bower_components/bootstrap/dist/css/bootstrap.min.css') }}">
@@ -15,9 +15,9 @@
   <link rel="stylesheet" href="{{asset('AdminLTE-2.4.3/dist/css/AdminLTE.min.css') }}">
   <link rel="stylesheet" href="{{asset('AdminLTE-2.4.3/dist/css/skins/_all-skins.min.css') }}">
   <link rel="stylesheet" href="{{asset('AdminLTE-2.4.3/style.css') }}">
-
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="{{asset('AdminLTE-2.4.3/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css') }}">
+
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -66,12 +66,12 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
       </div>
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
+
         <li>
           <a href="/dashboard">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
         </li>
-
         <li>
           <a href="/adminProduct">
             <i class="fa fa-archive"></i> <span>Product</span>
@@ -80,7 +80,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
 
         <li>
           <a href="/adminArticles">
-            <i class="fa fa-file-text-o"></i> <span>Articles</span>
+            <i class="fa fa-file-text-o"active></i> <span>Articles</span>
           </a>
         </li>
 
@@ -94,52 +94,57 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Product
+        Article
         <small>Form</small>
       </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Dashboard</li>
-      </ol>
     </section>
 
     <!-- Main content -->
     <section class="content">
       <div class="box">
+        <div class="box-header">
+          <h3 class="box-title">Input Articles
+            <small>Input</small>
+          </h3>
+          <!-- tools box -->
+          <div class="pull-right box-tools">
+            <button type="button" class="btn btn-default btn-sm" data-widget="collapse" data-toggle="tooltip"
+            title="Collapse">
+            <i class="fa fa-minus"></i></button>
+            <button type="button" class="btn btn-default btn-sm" data-widget="remove" data-toggle="tooltip"
+            title="Remove">
+            <i class="fa fa-times"></i></button>
+          </div>
+          <!-- /. tools -->
+        </div>
+        <!-- /.box-header -->
         <div class="box-body pad">
           <div class="form-group">
-            <label for="exampleInputEmail1">Nama Produk</label>
+            <label for="exampleInputEmail1">Judul</label>
             <input type="text" class="form-control" id="judul" placeholder="Enter Title">
           </div>
           <div class="form-group">
-            <label>Brand</label>
-            <select class="form-control select2" style="width: 100%;">
-              <option selected="selected">Wardah</option>
-              <option>Alaska</option>
-              <option>California</option>
-              <option>Delaware</option>
-              <option>Tennessee</option>
-              <option>Texas</option>
-              <option>Washington</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Harga</label>
+            <label for="exampleInputEmail1">Date</label>
             <input type="text" class="form-control" id="judul" placeholder="Enter Title">
           </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Deskripsi</label>
-            <input type="text" class="form-control" id="judul" placeholder="Enter Title">
-          </div>
-          <div class="form-group">
+           <div class="form-group">
+            <label for="exampleInputEmail1">Isi</label>
+          <form>
+            <textarea class="textarea" placeholder="Place some text here"
+            style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+          </form>
+        </form>
+      </div>
+        <div class="form-group">
             <label for="exampleInputFile">Choose Image</label>
             <input type="file" id="exampleInputFile">
           </div>
-          <div class="box-footer">
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </div>
+        <div class="box-footer">
+          <button type="submit" class="btn btn-primary">Submit</button>
         </div>
+        
       </div>
+
     </section>
     <!-- /.content -->
   </div>
@@ -178,6 +183,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
  <script src="{{asset('AdminLTE-2.4.3//bower_components/jquery-slimscroll/jquery.slimscroll.min.js') }}"></script>
  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js') }}"></script>
  <script src="{{asset('AdminLTE-2.4.3/docs.js') }}"></script>
+ <!-- Bootstrap WYSIHTML5 -->
  <script src="{{asset('AdminLTE-2.4.3/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js') }}"></script>
  <script>
   $(function () {

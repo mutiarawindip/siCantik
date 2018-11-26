@@ -15,9 +15,9 @@ Route::get('/', function () {
 	return view('welcome');
 });
 
-Route::get('adminLogin', function () {
-	return view('admin.login');
-});
+// Route::get('adminLogin', function () {
+// 	return view('admin.login');
+// });
 
 Route::get('about', function () { //sesuai a href
     return view('about');	//sesuai nama file di view layouts = nama folder, master = nama file, dipisahkan dengan tanda titik
@@ -46,18 +46,31 @@ Route::get('articlesDetail', function () { //sesuai a href
 Route::get('register', function () { //sesuai a href
     return view('admin.register');	//sesuai nama file di view layouts = nama folder, master = nama file, dipisahkan dengan tanda titik
 });
-Route::get('dashboard', function () { //sesuai a href
-    return view('admin.dashboard');	//sesuai nama file di view layouts = nama folder, master = nama file, dipisahkan dengan tanda titik
-});
-Route::get('adminProduct', function () { //sesuai a href
-    return view('admin.product');	//sesuai nama file di view layouts = nama folder, master = nama file, dipisahkan dengan tanda titik
-});
+// Route::get('dashboard', function () { //sesuai a href
+//     return view('admin.dashboard');	//sesuai nama file di view layouts = nama folder, master = nama file, dipisahkan dengan tanda titik
+// });
+
 Route::get('adminArticles', function () { //sesuai a href
     return view('admin.articles');	//sesuai nama file di view layouts = nama folder, master = nama file, dipisahkan dengan tanda titik
 });
 
-Route::get('/adminLogin', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
-Route::post('/adminLogin', 'Auth\AdminLoginController@login')->name('admin.dashboard');
-Route::get('/', 'AdminController@index')->name('admin.dashboard');
 
-Route::get('/logout', 'Auth\LoginController@userLogout')->name('user.logout');
+Route::prefix('admin')->group(function() {
+   
+    Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
+    Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login');
+    
+    Route::get('/', 'AdminController@index')->name('admin.dashboard');
+    // Route::post('/dashboard', 'AdminController@index')->name('admin.dashboard');
+    Route::get('/logout', 'Auth\LoginController@userLogout')->name('admin.logout');
+
+    Route::resource('manageadmins', 'ManageAdminController');
+});
+
+Route::prefix('products')->group(function() {
+
+    Route::get('/add', 'ProductsController@index')->name('products.add');
+    
+    Route::resource('manageproducts', 'ManageProductsController');    
+});
+

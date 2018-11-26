@@ -4,10 +4,14 @@ namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use App\Notifications\AdminResetPasswordNotification;
+use App\Http\Controllers\Controller;
+use App\Admin;
+use Hash;
 
 class Admin extends Authenticatable
 {
-    protected $guard = 'admin';
+    protected $guard = 'web';
     use Notifiable;
 
     /**
