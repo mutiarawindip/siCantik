@@ -11,10 +11,12 @@ class AdminLoginController extends Controller
 	{
 		$this->middleware('guest:admin');
 	}
+
 	function showLoginForm()
 	{
-		return view('admin.login');
+		return view('admin.dashboard');
 	}
+
 	function login(Request $request)
 	{
 
@@ -30,5 +32,6 @@ class AdminLoginController extends Controller
 			return redirect()->intended(route('admin.dashboard'));
 	}
 	// If unsuccessful, then redirect back to the login with the form data
-	redirect()->back()->withInput($request->only('email', 'remember'));
+	else{redirect()->back()->withInput($request->only('email', 'remember'));}
+}
 }

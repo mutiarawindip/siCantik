@@ -12,11 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+	return view('welcome');
 });
 
 Route::get('adminLogin', function () {
-    return view('admin.login');
+	return view('admin.login');
 });
 
 Route::get('about', function () { //sesuai a href
@@ -55,8 +55,9 @@ Route::get('adminProduct', function () { //sesuai a href
 Route::get('adminArticles', function () { //sesuai a href
     return view('admin.articles');	//sesuai nama file di view layouts = nama folder, master = nama file, dipisahkan dengan tanda titik
 });
-Route::prefix('admin')->group(function() {
-	Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
-	Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login');
-	Route::get('/', 'AdminController@index')->name('admin.dashboard');
-});
+
+Route::get('/adminLogin', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
+Route::post('/adminLogin', 'Auth\AdminLoginController@login')->name('admin.dashboard');
+Route::get('/', 'AdminController@index')->name('admin.dashboard');
+
+Route::get('/logout', 'Auth\LoginController@userLogout')->name('user.logout');
