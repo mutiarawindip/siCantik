@@ -71,7 +71,7 @@
         		</a>
         	</div>
         	<div class="col-md-4 ftco-animate">
-        		<a href="#" class="work-entry">
+        		<a href="/products-detail" class="work-entry">
         			<img src="pretty-gh-pages/images/normal/emina-5.jpg" class="img-fluid" alt="Cleanser">
         			<div class="info d-flex align-items-center">
         				<div>

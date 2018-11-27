@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Products;
 
 class ManageProductsController extends Controller
 {
@@ -17,7 +19,7 @@ class ManageProductsController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.dashboard');
     }
 
     /**
@@ -27,7 +29,7 @@ class ManageProductsController extends Controller
      */
     public function create()
     {
-        return view('admin.product');
+        return view('admin.products.product');
     }
 
     /**
@@ -60,7 +62,7 @@ class ManageProductsController extends Controller
     public function show($id)
     {
         $products = Products::ﬁnd($id);
-        return view('manageaproducts.show',compact('products'));
+        return view('manageproducts.show',compact('produk'));
 
     }
 

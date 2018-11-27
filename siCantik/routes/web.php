@@ -25,6 +25,9 @@ Route::get('about', function () { //sesuai a href
 Route::get('products', function () { //sesuai a href
     return view('products');	//sesuai nama file di view layouts = nama folder, master = nama file, dipisahkan dengan tanda titik
 });
+Route::get('products-detail', function () { //sesuai a href
+    return view('productsDetail');    //sesuai nama file di view layouts = nama folder, master = nama file, dipisahkan dengan tanda titik
+});
 Route::get('dry', function () { //sesuai a href
     return view('products.dry');	//sesuai nama file di view layouts = nama folder, master = nama file, dipisahkan dengan tanda titik
 });
@@ -67,8 +70,9 @@ Route::prefix('admin')->group(function() {
 });
 
 
-Route::prefix('products')->group(function() {
+Route::prefix('product')->group(function() {
     Route::get('/', 'ProductsController@index')->name('admin.products.product');
+    Route::post('/', 'ProductsController@store')->name('admin.products.product');
     Route::get('/add', 'ProductsController@index')->name('products.add');
     
     Route::resource('manageproducts', 'ManageProductsController');    
