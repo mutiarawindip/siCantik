@@ -66,12 +66,12 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li>
-          <a href="/dashboard">
+          <a href="/admin/dashboard">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
         </li>
         <li>
-          <a href="/adminProduct">
+          <a href="/products">
             <i class="fa fa-archive"></i> <span>Product</span>
           </a>
         </li>
@@ -81,7 +81,11 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
             <i class="fa fa-file-text-o"></i> <span>Articles</span>
           </a>
         </li>
-
+        <li>
+          <a href="/admin/logout">
+            <i class="fa fa-peoples"></i> <span>Logout</span>
+          </a>
+        </li>
       </ul>
     </section>
     <!-- /.sidebar -->

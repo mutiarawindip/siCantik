@@ -15,7 +15,7 @@ return [
 
     'defaults' => [
         'guard' => 'admin',
-        'passwords' => 'users',
+        'passwords' => 'admins',
     ],
 
     /*
@@ -41,7 +41,7 @@ return [
             'provider' => 'admins',
         ],
 
-        'admin-api' => [
+        'api' => [
             'driver' => 'token',
             'provider' => 'admins',
         ],

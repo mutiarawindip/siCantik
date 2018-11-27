@@ -73,7 +73,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
           </a>
         </li>
         <li>
-          <a href="/adminProduct">
+          <a href="/products">
             <i class="fa fa-archive"></i> <span>Product</span>
           </a>
         </li>

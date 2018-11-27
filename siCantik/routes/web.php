@@ -54,21 +54,21 @@ Route::get('adminArticles', function () { //sesuai a href
     return view('admin.articles');	//sesuai nama file di view layouts = nama folder, master = nama file, dipisahkan dengan tanda titik
 });
 
+Auth::routes();
 
 Route::prefix('admin')->group(function() {
    
     Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
-    Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login');
-    
-    Route::get('/', 'AdminController@index')->name('admin.dashboard');
-    // Route::post('/dashboard', 'AdminController@index')->name('admin.dashboard');
-    Route::get('/logout', 'Auth\LoginController@userLogout')->name('admin.logout');
+    Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
+    Route::get('/dashboard', 'AdminController@index')->name('admin.dashboard');
+    Route::post('/logout', 'Auth\AdminLoginController@logout')->name('admin.logout');
 
     Route::resource('manageadmins', 'ManageAdminController');
 });
 
-Route::prefix('products')->group(function() {
 
+Route::prefix('products')->group(function() {
+    Route::get('/', 'ProductsController@index')->name('admin.products.product');
     Route::get('/add', 'ProductsController@index')->name('products.add');
     
     Route::resource('manageproducts', 'ManageProductsController');    

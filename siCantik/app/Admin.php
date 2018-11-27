@@ -4,23 +4,18 @@ namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use App\Notifications\AdminResetPasswordNotification;
-use App\Http\Controllers\Controller;
-use App\Admin;
-use Hash;
 
 class Admin extends Authenticatable
 {
-    protected $guard = 'web';
     use Notifiable;
-
+    protected $guard = 'admin';
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'username', 'email', 'password',
+        'email', 'password',
     ];
 
     /**

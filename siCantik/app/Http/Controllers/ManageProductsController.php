@@ -38,7 +38,17 @@ class ManageProductsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+          'nama_produk' => 'required',
+          'id_brand' => 'required',
+          'harga' => 'required',
+          'deskripsi' => 'required',
+      ]); 
+      $input = $request->all();
+      $products = Products::create($input); 
+      return redirect()->route('manageproducts.index')
+                      ->with('success','Product successfully added');
+
     }
 
     /**
@@ -49,7 +59,9 @@ class ManageProductsController extends Controller
      */
     public function show($id)
     {
-        //
+        $products = Products::ﬁnd($id);
+        return view('manageaproducts.show',compact('products'));
+
     }
 
     /**

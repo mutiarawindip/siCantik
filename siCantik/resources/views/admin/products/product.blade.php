@@ -99,7 +99,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Dashboard</li>
+        <li class="active">Product</li>
       </ol>
     </section>
 
@@ -107,6 +107,8 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
     <section class="content">
       <div class="box">
         <div class="box-body pad">
+          <form class="form-horizontal" method="POST" action="{{ route('manageproducts.store') }}">
+                        {{ csrf_field() }}
           <div class="form-group">
             <label for="exampleInputEmail1">Nama Produk</label>
             <input type="text" class="form-control" id="judul" placeholder="Enter Title">
@@ -115,12 +117,10 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
             <label>Brand</label>
             <select class="form-control select2" style="width: 100%;">
               <option selected="selected">Wardah</option>
-              <option>Alaska</option>
-              <option>California</option>
-              <option>Delaware</option>
-              <option>Tennessee</option>
-              <option>Texas</option>
-              <option>Washington</option>
+              <option>Emina</option>
+              <option>Sariayu</option>
+              <option>Mustika Ratu</option>
+              <option>Make Over</option>
             </select>
           </div>
           <div class="form-group">
@@ -138,6 +138,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
           <div class="box-footer">
             <button type="submit" class="btn btn-primary">Submit</button>
           </div>
+        </form>
         </div>
       </div>
     </section>
